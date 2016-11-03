@@ -1,16 +1,11 @@
+/**
+ * Created by Benou on 03/11/2016.
+ */
+
 import angular from 'angular';
-import uiRouter from 'angular-ui-router';
 
-import './index.scss';
-
-import routes from './index.routes';
-
-angular
-  .module('app', [
-    uiRouter
-  ])
-  .config(routes);
+import {AppModule} from './app/app.module';
 
 angular.element(document).ready(() => {
-  angular.bootstrap(document, ['app']);
+  angular.bootstrap(document, [AppModule]);
 });
