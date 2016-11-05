@@ -3,7 +3,13 @@
  */
 
 /** @ngInject */
-export const AppRoutes = ($locationProvider, $urlRouterProvider) => {
+export const AppRoutes = ($locationProvider, $urlRouterProvider, $stateProvider) => {
   $locationProvider.html5Mode(true).hashPrefix('!');
   $urlRouterProvider.otherwise('/');
+
+  $stateProvider
+    .state('app', {
+      url: '/',
+      component: 'app'
+    });
 };
