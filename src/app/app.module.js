@@ -5,12 +5,15 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 
+import {RoomModule} from './room/room.module';
+
 import {AppRoutes} from './app.routes';
 import {AppComponent} from './app.component';
 
 export const AppModule = angular
   .module('app', [
-    uiRouter
+    uiRouter,
+    RoomModule
   ])
   .config(AppRoutes)
   .component('app', AppComponent)

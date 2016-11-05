@@ -9,7 +9,7 @@ export const AppRoutes = ($locationProvider, $urlRouterProvider, $stateProvider)
 
   $stateProvider
     .state('app', {
-      url: '/',
+      abstract: true,
       component: 'app'
     });
 };
