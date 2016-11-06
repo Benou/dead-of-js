@@ -5,18 +5,22 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 
-import {RoomFormModule} from './room-form/room-form.module';
-import {RoomListModule} from './room-list/room-list.module';
+import {RoomJoinModule} from './room-join/room-join.module';
+import {RoomOpenModule} from './room-open/room-open.module';
+import {RoomWaitModule} from './room-wait/room-wait.module';
 
 import {RoomRoutes} from './room.routes';
 import {RoomComponent} from './room.component';
+import {RoomService} from './room.service';
 
 export const RoomModule = angular
   .module('app.room', [
     uiRouter,
-    RoomFormModule,
-    RoomListModule
+    RoomJoinModule,
+    RoomOpenModule,
+    RoomWaitModule
   ])
   .config(RoomRoutes)
   .component('room', RoomComponent)
+  .service('RoomService', RoomService)
   .name;
