@@ -8,5 +8,5 @@ import {RoomWaitComponent} from './room-wait.component';
 
 export const RoomWaitModule = angular
   .module('app.room.wait', [])
-  .component('roomWait', RoomWaitComponent)
+  .component('dowRoomWait', RoomWaitComponent)
   .name;

@@ -10,6 +10,6 @@ export const AppRoutes = ($locationProvider, $urlRouterProvider, $stateProvider)
   $stateProvider
     .state('app', {
       abstract: true,
-      component: 'app'
+      component: 'dowApp'
     });
 };

@@ -8,5 +8,5 @@ import {RoomFormComponent} from './room-form.component';
 
 export const RoomFormModule = angular
   .module('app.room.form', [])
-  .component('roomForm', RoomFormComponent)
+  .component('dowRoomForm', RoomFormComponent)
   .name;

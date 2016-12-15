@@ -9,6 +9,6 @@ import {RoomListItemComponent} from './room-list-item.component';
 
 export const RoomListModule = angular
   .module('app.room.list', [])
-  .component('roomList', RoomListComponent)
-  .component('roomListItem', RoomListItemComponent)
+  .component('dowRoomList', RoomListComponent)
+  .component('dowRoomListItem', RoomListItemComponent)
   .name;

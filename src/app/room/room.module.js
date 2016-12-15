@@ -21,6 +21,6 @@ export const RoomModule = angular
     RoomWaitModule
   ])
   .config(RoomRoutes)
-  .component('room', RoomComponent)
+  .component('dowRoom', RoomComponent)
   .service('RoomService', RoomService)
   .name;

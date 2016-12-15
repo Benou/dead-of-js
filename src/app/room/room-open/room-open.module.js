@@ -12,5 +12,5 @@ export const RoomOpenModule = angular
   .module('app.room.open', [
     RoomFormModule
   ])
-  .component('roomOpen', RoomOpenComponent)
+  .component('dowRoomOpen', RoomOpenComponent)
   .name;

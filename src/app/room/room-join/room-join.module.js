@@ -12,5 +12,5 @@ export const RoomJoinModule = angular
   .module('app.room.join', [
     RoomListModule
   ])
-  .component('roomJoin', RoomJoinComponent)
+  .component('dowRoomJoin', RoomJoinComponent)
   .name;

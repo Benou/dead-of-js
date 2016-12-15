@@ -16,5 +16,5 @@ export const AppModule = angular
     RoomModule
   ])
   .config(AppRoutes)
-  .component('app', AppComponent)
+  .component('dowApp', AppComponent)
   .name;
